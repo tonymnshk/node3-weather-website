@@ -26,7 +26,7 @@ const forecast = (latitude, longitude, callback) => {
     } else {
       const current = body.current
       callback(undefined,
-        `It is currently ${current.temperature} degree out. There is a ${current.precip}% chance of rain.`
+        `It is currently ${current.temperature} degree out. There is a ${current.precip}% chance of rain. The humidity is ${current.humidity}.`
       )
     }
   })
